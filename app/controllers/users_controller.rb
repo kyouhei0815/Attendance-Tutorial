@@ -54,7 +54,7 @@ class UsersController < ApplicationController
     flash[:danger] = "#{@user.name}の更新は失敗しました。<br>" + @user.errors.full_messages.join("<br>")
   end
   redirect_to users_url
-end
+ end
  
 
   private
